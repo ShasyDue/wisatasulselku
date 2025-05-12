@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peta Sulsel - Wisata Sulselku</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="peta-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">Wisata Sulselku</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="destinasi.html">Destinasi</a></li>
+            <li><a href="peta.html" class="active">Peta Sulsel</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="map-hero">
+      <div class="map-hero-content">
+        <h1>SULAWESI SELATAN</h1>
+        <p class="map-description">
+          Sulawesi Selatan terdiri dari 24 kabupaten/kota dengan Makassar
+          sebagai ibu kotanya. Wilayah ini memiliki keanekaragaman geografis,
+          dari gugusan karst di Maros, pantai eksotis di Bulukumba, hingga
+          pegunungan di Tana Toraja yang kaya akan budaya. Kota besar lainnya
+          seperti Parepare dan Palopo juga berperan penting dalam ekonomi dan
+          perdagangan. Kabupaten Pangkep terkenal dengan wisata bahari dan
+          gugusan Pulau Spermonde, sementara Gowa menyimpan sejarah kejayaan
+          Kerajaan Gowa. Dengan perpaduan antara keindahan alam, budaya yang
+          kuat, dan perkembangan ekonomi, Sulawesi Selatan menjadi salah satu
+          provinsi paling dinamis di Indonesia.
+        </p>
+        <a
+          href="https://maps.app.goo.gl/WG64pMHLgq7svmzG9"
+          target="_blank"
+          class="view-more-btn"
+          >Lihat Lebih Lanjut</a
+        >
+      </div>
+      <div class="map-hero-visual">
+        <img
+          src="images/peta fix.png"
+          alt="Peta Sulawesi Selatan"
+          class="main-map"
+        />
+      </div>
+    </section>
+
+    <!-- Hapus atau komentar seluruh section interactive-map karena tidak diperlukan lagi -->
+    <!-- 
+    <section class="interactive-map">
+        <div class="container">
+            <div class="map-container">
+                <div class="sulsel-map">
+                    <img src="images/peta-sulsel-fix.png" alt="Peta Sulawesi Selatan" usemap="#sulsel-map">
+                   
+                    <map name="sulsel-map">
+                        <area shape="poly" coords="120,150,140,160,150,180,130,190" alt="Makassar" href="#makassar" data-region="makassar">
+                        <area shape="poly" coords="200,180,220,190,230,210,210,220" alt="Maros" href="#maros" data-region="maros">
+                        <area shape="poly" coords="280,220,300,230,310,250,290,260" alt="Bone" href="#bone" data-region="bone">
+                        <area shape="poly" coords="350,300,370,310,380,330,360,340" alt="Toraja" href="#toraja" data-region="toraja">
+                        <area shape="poly" coords="400,350,420,360,430,380,410,390" alt="Luwu" href="#luwu" data-region="luwu">
+                        <area shape="poly" coords="450,400,470,410,480,430,460,440" alt="Palopo" href="#palopo" data-region="palopo">
+                        <area shape="poly" coords="150,250,170,260,180,280,160,290" alt="Gowa" href="#gowa" data-region="gowa">
+                        <area shape="poly" coords="100,300,120,310,130,330,110,340" alt="Jeneponto" href="#jeneponto" data-region="jeneponto">
+                        <area shape="poly" coords="180,350,200,360,210,380,190,390" alt="Bulukumba" href="#bulukumba" data-region="bulukumba">
+                        <area shape="poly" coords="230,400,250,410,260,430,240,440" alt="Selayar" href="#selayar" data-region="selayar">
+                    </map>
+                    <div class="map-pins">
+                        <div class="map-pin" style="top: 150px; left: 120px;" data-region="makassar"></div>
+                        <div class="map-pin" style="top: 180px; left: 200px;" data-region="maros"></div>
+                        <div class="map-pin" style="top: 220px; left: 280px;" data-region="bone"></div>
+                        <div class="map-pin" style="top: 300px; left: 350px;" data-region="toraja"></div>
+                        <div class="map-pin" style="top: 350px; left: 400px;" data-region="luwu"></div>
+                        <div class="map-pin" style="top: 400px; left: 450px;" data-region="palopo"></div>
+                        <div class="map-pin" style="top: 250px; left: 150px;" data-region="gowa"></div>
+                        <div class="map-pin" style="top: 300px; left: 100px;" data-region="jeneponto"></div>
+                        <div class="map-pin" style="top: 350px; left: 180px;" data-region="bulukumba"></div>
+                        <div class="map-pin" style="top: 400px; left: 230px;" data-region="selayar"></div>
+                    </div>
+                </div>
+                <div class="region-info" id="region-info">
+                    <div class="region-details" id="makassar">
+                        <h2>Makassar</h2>
+                        <p>Ibu kota Sulawesi Selatan dengan berbagai destinasi wisata seperti Pantai Losari, Fort Rotterdam, dan Pulau Samalona. Kota ini juga terkenal dengan kuliner khasnya seperti Coto Makassar dan Pisang Ijo.</p>
+                        <div class="region-attractions">
+                            <div class="attraction">
+                                <img src="images/pantai-losari.jpg" alt="Pantai Losari">
+                                <h3>Pantai Losari</h3>
+                            </div>
+                            <div class="attraction">
+                                <img src="images/fort-rotterdam.jpg" alt="Fort Rotterdam">
+                                <h3>Fort Rotterdam</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="region-details" id="maros">
+                        <h2>Maros</h2>
+                        <p>Terkenal dengan Taman Nasional Bantimurung-Bulusaraung yang memiliki gugusan karst dan air terjun. Daerah ini juga memiliki gua prasejarah Leang-Leang dengan lukisan telapak tangan berusia ribuan tahun.</p>
+                        <div class="region-attractions">
+                            <div class="attraction">
+                                <img src="images/bantimurung.jpg" alt="Air Terjun Bantimurung">
+                                <h3>Air Terjun Bantimurung</h3>
+                            </div>
+                            <div class="attraction">
+                                <img src="images/leang-leang.jpg" alt="Gua Leang-Leang">
+                                <h3>Gua Leang-Leang</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="region-details" id="toraja">
+                        <h2>Tana Toraja</h2>
+                        <p>Terkenal dengan budaya dan tradisi unik, rumah adat Tongkonan, dan upacara pemakaman Rambu Solo. Daerah ini memiliki pemandangan alam pegunungan yang indah dan terasering sawah yang menakjubkan.</p>
+                        <div class="region-attractions">
+                            <div class="attraction">
+                                <img src="images/tongkonan.jpg" alt="Rumah Adat Tongkonan">
+                                <h3>Rumah Adat Tongkonan</h3>
+                            </div>
+                            <div class="attraction">
+                                <img src="images/lemo.jpg" alt="Lemo">
+                                <h3>Lemo</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="region-details" id="bulukumba">
+                        <h2>Bulukumba</h2>
+                        <p>Dikenal sebagai Butta Panrita Lopi (Tanah Para Ahli Pembuat Perahu) dengan pantai-pantai indah seperti Pantai Bira dan Pantai Apparalang. Daerah ini juga terkenal dengan pembuatan perahu Phinisi tradisional.</p>
+                        <div class="region-attractions">
+                            <div class="attraction">
+                                <img src="images/pantai-bira.jpg" alt="Pantai Bira">
+                                <h3>Pantai Bira</h3>
+                            </div>
+                            <div class="attraction">
+                                <img src="images/phinisi.jpg" alt="Pembuatan Perahu Phinisi">
+                                <h3>Pembuatan Perahu Phinisi</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    // ... existing code ...
+    <section class="featured-destinations">
+      <div class="container">
+        <h2>Destinasi Populer</h2>
+        <div class="destination-grid">
+          <div class="destination-card">
+            <img src="images/toraja.jpg" alt="Tana Toraja" />
+            <h3>Tana Toraja</h3>
+            <p>
+              Nikmati keunikan budaya dan arsitektur tradisional yang
+              menakjubkan
+            </p>
+            <a
+              href="https://maps.app.goo.gl/L9vZ8XNHgBwg6rBV8"
+              class="btn-secondary"
+              target="_blank"
+              >Jelajahi</a
+            >
+          </div>
+          <div class="destination-card">
+            <img src="images/rammang-rammang.jpg" alt="Rammang-Rammang" />
+            <h3>Rammang-Rammang</h3>
+            <p>
+              Keindahan karst yang mempesona dengan pemandangan alam yang
+              memukau
+            </p>
+            <a
+              href="https://maps.app.goo.gl/gjXcXYq5BuotoZcx6"
+              class="btn-secondary"
+              target="_blank"
+              >Jelajahi</a
+            >
+          </div>
+          <div class="destination-card">
+            <img src="images/pantai-bira.jpg" alt="Pantai Bira" />
+            <h3>Pantai Bira</h3>
+            <p>
+              Pantai pasir putih dengan air jernih yang menjadi surga bagi para
+              wisatawan
+            </p>
+            <a
+              href="https://maps.app.goo.gl/M8cwcMATFbFdqT1R8"
+              class="btn-secondary"
+              target="_blank"
+              >Jelajahi</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Wisata Sulselku</h3>
+            <p>Jelajahi keindahan Sulawesi Selatan</p>
+          </div>
+          <div class="footer-links">
+            <h4>Tautan</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="destinasi.html">Destinasi</a></li>
+              <li><a href="peta.html">Peta Wisata</a></li>
+              <li><a href="artikel.html">Artikel</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Kontak</h4>
+            <p>Email: info@wisatasulselku.com</p>
+            <p>Telepon: +62 82692181850</p>
+            <div class="social-media">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Wisata Sulselku. Hak Cipta Dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Menampilkan informasi region saat pin atau area diklik
+        const mapPins = document.querySelectorAll(".map-pin");
+        const mapAreas = document.querySelectorAll("area");
+        const regionDetails = document.querySelectorAll(".region-details");
+
+        // Sembunyikan semua detail region saat halaman dimuat
+        regionDetails.forEach((detail) => {
+          detail.style.display = "none";
+        });
+
+        // Tampilkan detail Makassar sebagai default
+        document.getElementById("makassar").style.display = "block";
+
+        // Fungsi untuk menampilkan region yang dipilih
+        function showRegion(regionId) {
+          regionDetails.forEach((detail) => {
+            detail.style.display = "none";
+          });
+
+          const selectedRegion = document.getElementById(regionId);
+          if (selectedRegion) {
+            selectedRegion.style.display = "block";
+
+            // Scroll ke informasi region
+            document.getElementById("region-info").scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        }
+
+        // Event listener untuk pin pada peta
+        mapPins.forEach((pin) => {
+          pin.addEventListener("click", function () {
+            const regionId = this.getAttribute("data-region");
+            showRegion(regionId);
+          });
+        });
+
+        // Event listener untuk area pada peta
+        mapAreas.forEach((area) => {
+          area.addEventListener("click", function (e) {
+            e.preventDefault();
+            const regionId = this.getAttribute("data-region");
+            showRegion(regionId);
+          });
+        });
+      });
+    </script>
+
+    <!-- Tambahkan Font Awesome untuk ikon media sosial -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

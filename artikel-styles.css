@@ -1,0 +1,147 @@
+/* Styles khusus untuk halaman Artikel */
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.artikel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 60px;
+}
+
+.artikel-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.artikel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.artikel-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.artikel-card:last-child {
+  border-bottom: none;
+}
+
+.artikel-content {
+  flex: 2;
+}
+
+.artikel-category {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.artikel-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.artikel-title a {
+  color: #ed4f45;
+  transition: color 0.3s ease;
+}
+
+.artikel-title a:hover {
+  color: #ff6b61;
+}
+
+.artikel-meta {
+  font-size: 0.9rem;
+  color: #999;
+  line-height: 1.6;
+}
+
+.artikel-image {
+  flex: 1;
+  max-width: 300px;
+}
+
+.artikel-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .artikel-heading {
+    font-size: 2.2rem;
+  }
+
+  .artikel-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .artikel-card {
+    flex-direction: column-reverse;
+  }
+
+  .artikel-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .artikel-image img {
+    height: 220px;
+  }
+
+  .artikel-heading {
+    font-size: 2rem;
+  }
+
+  .artikel-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .artikel-container {
+    padding: 80px 15px 40px;
+  }
+
+  .artikel-heading {
+    font-size: 1.8rem;
+  }
+
+  .artikel-title {
+    font-size: 1.3rem;
+  }
+}
+
+.artikel-button {
+  display: inline-block;
+  background-color: #ed4f45;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.artikel-button:hover {
+  background-color: #d83c32;
+  text-decoration: none;
+}

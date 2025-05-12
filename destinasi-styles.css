@@ -1,0 +1,337 @@
+/* Styles khusus untuk halaman Destinasi */
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #ffecda;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #ffecda;
+  padding: 60px 0 30px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #1a1a1a;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+}
+
+.hero-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #e74c3c;
+}
+
+/* Interest Section */
+.interest-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.interest-card {
+  display: flex;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.left-card {
+  background-color: #1a1a1a;
+}
+
+.right-card {
+  background-color: #e74c3c;
+}
+
+.interest-content {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.interest-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.interest-content p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Interest Section - Penyesuaian Gambar */
+.interest-image {
+  flex: 1;
+  height: 300px; /* Tetapkan tinggi yang konsisten */
+  overflow: hidden;
+  position: relative;
+  padding: 10px; /* Tambahkan padding untuk margin internal */
+}
+
+.interest-image img {
+  width: calc(100% - 20px); /* Kurangi lebar untuk margin */
+  height: calc(100% - 20px); /* Kurangi tinggi untuk margin */
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 5px; /* Tambahkan sedikit rounded corner */
+}
+
+/* Events Section - Penyesuaian Gambar */
+.event-image {
+  flex: 1;
+  max-width: 250px;
+  height: 180px; /* Tetapkan tinggi yang konsisten */
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 5px; /* Tambahkan padding untuk margin internal */
+  position: relative;
+}
+
+.event-image img {
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 3px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .interest-image {
+    height: 250px;
+  }
+
+  .event-image {
+    max-width: 100%;
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .interest-image {
+    height: 220px;
+  }
+
+  .event-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .interest-image {
+    height: 200px;
+  }
+
+  .event-image {
+    height: 180px;
+  }
+}
+
+.interest-button {
+  display: inline-block;
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  align-self: flex-start;
+  transition: all 0.3s ease;
+}
+
+.left-card .interest-button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.left-card .interest-button:hover {
+  background-color: #d44235;
+  transform: translateY(-3px);
+}
+
+.right-card .interest-button {
+  background-color: #fff;
+  color: #e74c3c;
+}
+
+.right-card .interest-button:hover {
+  background-color: #f8f8f8;
+  transform: translateY(-3px);
+}
+
+/* Events Section */
+.events-section {
+  background-color: #e74c3c;
+  padding: 40px 20px;
+  color: #fff;
+  position: relative;
+  margin-top: 20px;
+}
+
+.events-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.events-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+}
+
+.event-card {
+  display: flex;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 30px;
+}
+
+.event-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.event-content {
+  flex: 2;
+  padding-right: 30px;
+}
+
+.event-content h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.event-content p {
+  margin-bottom: 0;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+.event-image {
+  flex: 1;
+  max-width: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.event-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .interest-card {
+    flex-direction: column;
+  }
+
+  .right-card {
+    flex-direction: column-reverse;
+  }
+
+  .interest-image,
+  .event-image {
+    min-height: 200px;
+    max-width: 100%;
+  }
+
+  .event-card {
+    flex-direction: column;
+  }
+
+  .event-content {
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .event-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .interest-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .events-heading {
+    font-size: 2rem;
+  }
+
+  .event-content h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 40px 0 20px;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+  }
+
+  .interest-content {
+    padding: 25px;
+  }
+
+  .interest-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .events-heading {
+    font-size: 1.8rem;
+  }
+
+  .event-content h3 {
+    font-size: 1.4rem;
+  }
+}
