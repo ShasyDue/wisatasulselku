@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasil Pencarian - Wisata Sulselku</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="search-results-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">Wisata Sulselku</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="destinasi.html">Destinasi</a></li>
+            <li><a href="peta.html">Peta Sulsel</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="search-container">
+      <div class="container">
+        <form class="search-form" action="search-results.html" method="get">
+          <input type="text" name="query" id="search-query" placeholder="Cari destinasi wisata..." required>
+          <button type="submit"><i class="fas fa-search"></i> Cari</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="search-results-section">
+      <div class="container">
+        <h1 class="search-title">Hasil Pencarian untuk: <span id="search-term"></span></h1>
+        
+        <div id="results-container">
+          <!-- Hasil pencarian akan ditampilkan di sini -->
+          <p class="no-results">Memuat hasil pencarian...</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Wisata Sulselku</h3>
+            <p>Jelajahi keindahan Sulawesi Selatan</p>
+          </div>
+          <div class="footer-links">
+            <h4>Tautan</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="destinasi.html">Destinasi</a></li>
+              <li><a href="peta.html">Peta Wisata</a></li>
+              <li><a href="artikel.html">Artikel</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Kontak</h4>
+            <p>Email: info@wisatasulselku.com</p>
+            <p>Telepon: +62 82692181850</p>
+            <div class="social-media">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Wisata Sulselku. Hak Cipta Dilindungi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script untuk menampilkan hasil pencarian -->
+    <script src="search.js"></script>
+  </body>
+</html>
