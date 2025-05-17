@@ -12,6 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -62,103 +69,6 @@
       </div>
     </section>
 
-    <!-- Hapus atau komentar seluruh section interactive-map karena tidak diperlukan lagi -->
-    <!-- 
-    <section class="interactive-map">
-        <div class="container">
-            <div class="map-container">
-                <div class="sulsel-map">
-                    <img src="images/peta-sulsel-fix.png" alt="Peta Sulawesi Selatan" usemap="#sulsel-map">
-                   
-                    <map name="sulsel-map">
-                        <area shape="poly" coords="120,150,140,160,150,180,130,190" alt="Makassar" href="#makassar" data-region="makassar">
-                        <area shape="poly" coords="200,180,220,190,230,210,210,220" alt="Maros" href="#maros" data-region="maros">
-                        <area shape="poly" coords="280,220,300,230,310,250,290,260" alt="Bone" href="#bone" data-region="bone">
-                        <area shape="poly" coords="350,300,370,310,380,330,360,340" alt="Toraja" href="#toraja" data-region="toraja">
-                        <area shape="poly" coords="400,350,420,360,430,380,410,390" alt="Luwu" href="#luwu" data-region="luwu">
-                        <area shape="poly" coords="450,400,470,410,480,430,460,440" alt="Palopo" href="#palopo" data-region="palopo">
-                        <area shape="poly" coords="150,250,170,260,180,280,160,290" alt="Gowa" href="#gowa" data-region="gowa">
-                        <area shape="poly" coords="100,300,120,310,130,330,110,340" alt="Jeneponto" href="#jeneponto" data-region="jeneponto">
-                        <area shape="poly" coords="180,350,200,360,210,380,190,390" alt="Bulukumba" href="#bulukumba" data-region="bulukumba">
-                        <area shape="poly" coords="230,400,250,410,260,430,240,440" alt="Selayar" href="#selayar" data-region="selayar">
-                    </map>
-                    <div class="map-pins">
-                        <div class="map-pin" style="top: 150px; left: 120px;" data-region="makassar"></div>
-                        <div class="map-pin" style="top: 180px; left: 200px;" data-region="maros"></div>
-                        <div class="map-pin" style="top: 220px; left: 280px;" data-region="bone"></div>
-                        <div class="map-pin" style="top: 300px; left: 350px;" data-region="toraja"></div>
-                        <div class="map-pin" style="top: 350px; left: 400px;" data-region="luwu"></div>
-                        <div class="map-pin" style="top: 400px; left: 450px;" data-region="palopo"></div>
-                        <div class="map-pin" style="top: 250px; left: 150px;" data-region="gowa"></div>
-                        <div class="map-pin" style="top: 300px; left: 100px;" data-region="jeneponto"></div>
-                        <div class="map-pin" style="top: 350px; left: 180px;" data-region="bulukumba"></div>
-                        <div class="map-pin" style="top: 400px; left: 230px;" data-region="selayar"></div>
-                    </div>
-                </div>
-                <div class="region-info" id="region-info">
-                    <div class="region-details" id="makassar">
-                        <h2>Makassar</h2>
-                        <p>Ibu kota Sulawesi Selatan dengan berbagai destinasi wisata seperti Pantai Losari, Fort Rotterdam, dan Pulau Samalona. Kota ini juga terkenal dengan kuliner khasnya seperti Coto Makassar dan Pisang Ijo.</p>
-                        <div class="region-attractions">
-                            <div class="attraction">
-                                <img src="images/pantai-losari.jpg" alt="Pantai Losari">
-                                <h3>Pantai Losari</h3>
-                            </div>
-                            <div class="attraction">
-                                <img src="images/fort-rotterdam.jpg" alt="Fort Rotterdam">
-                                <h3>Fort Rotterdam</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="region-details" id="maros">
-                        <h2>Maros</h2>
-                        <p>Terkenal dengan Taman Nasional Bantimurung-Bulusaraung yang memiliki gugusan karst dan air terjun. Daerah ini juga memiliki gua prasejarah Leang-Leang dengan lukisan telapak tangan berusia ribuan tahun.</p>
-                        <div class="region-attractions">
-                            <div class="attraction">
-                                <img src="images/bantimurung.jpg" alt="Air Terjun Bantimurung">
-                                <h3>Air Terjun Bantimurung</h3>
-                            </div>
-                            <div class="attraction">
-                                <img src="images/leang-leang.jpg" alt="Gua Leang-Leang">
-                                <h3>Gua Leang-Leang</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="region-details" id="toraja">
-                        <h2>Tana Toraja</h2>
-                        <p>Terkenal dengan budaya dan tradisi unik, rumah adat Tongkonan, dan upacara pemakaman Rambu Solo. Daerah ini memiliki pemandangan alam pegunungan yang indah dan terasering sawah yang menakjubkan.</p>
-                        <div class="region-attractions">
-                            <div class="attraction">
-                                <img src="images/tongkonan.jpg" alt="Rumah Adat Tongkonan">
-                                <h3>Rumah Adat Tongkonan</h3>
-                            </div>
-                            <div class="attraction">
-                                <img src="images/lemo.jpg" alt="Lemo">
-                                <h3>Lemo</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="region-details" id="bulukumba">
-                        <h2>Bulukumba</h2>
-                        <p>Dikenal sebagai Butta Panrita Lopi (Tanah Para Ahli Pembuat Perahu) dengan pantai-pantai indah seperti Pantai Bira dan Pantai Apparalang. Daerah ini juga terkenal dengan pembuatan perahu Phinisi tradisional.</p>
-                        <div class="region-attractions">
-                            <div class="attraction">
-                                <img src="images/pantai-bira.jpg" alt="Pantai Bira">
-                                <h3>Pantai Bira</h3>
-                            </div>
-                            <div class="attraction">
-                                <img src="images/phinisi.jpg" alt="Pembuatan Perahu Phinisi">
-                                <h3>Pembuatan Perahu Phinisi</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-
-    // ... existing code ...
     <section class="featured-destinations">
       <div class="container">
         <h2>Destinasi Populer</h2>
