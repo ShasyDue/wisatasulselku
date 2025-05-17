@@ -184,3 +184,16 @@
     font-size: 1.8rem;
   }
 }
+
+/* Tambahkan Search Icon di Navigasi */
+.search-icon {
+  color: #ccc;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-left: 25px;
+}
+
+.search-icon:hover {
+  color: #fff;
+}
